@@ -1,1 +1,134 @@
-/*My DZ*/
+body{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*1 task*/
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; 
+
+    background-color: blue;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+
+    animation-name: changebgcolor;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes changebgcolor{
+    0%{
+        background-color: aqua;
+    }
+
+    20%{
+        background-color: red;
+    }
+
+    40%{
+        background-color: yellow;
+    }
+    
+    60%{
+        background-color: purple;
+    }
+
+    80%{
+        background-color: greenyellow;
+    }
+
+    100%{
+        background-color: blue;
+    }
+}
+
+/*2 task*/
+.button{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    animation-name: increasedecreasecircle;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+
+@keyframes increasedecreasecircle{
+    0%{
+        transition-delay: 2s;
+    }
+
+    20%{
+        transform: scale(1.5);
+    }
+
+    40%{
+        transform: scale(1.5);
+    }
+    
+    60%{
+        transform: scale(1.5);
+    }
+
+    80%{
+        transition-delay: 2s;
+    }
+
+    100%{
+        transition-delay: 1s;
+    }
+}
+
+/*3 task*/
+.big-box{
+    width: 100%;
+}
+
+.box-two{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; 
+
+    background-color: red;
+
+    animation-name: infinitebox;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes infinitebox{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(1490%);
+    }
+}
