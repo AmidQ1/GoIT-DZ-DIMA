@@ -29,6 +29,7 @@ h2{
     
 
     animation-name: changebgcolor;
+    animation-iteration-count: 3;
     animation-duration: 5s;
     animation-delay: 1s;
 }
@@ -88,20 +89,12 @@ h2{
         transform: scale(1.5);
     }
 
-    40%{
-        transform: scale(1.5);
-    }
-    
-    60%{
-        transform: scale(1.5);
-    }
-
     80%{
-        transition-delay: 2s;
+        transform: scale(1.5);
     }
 
     100%{
-        transition-delay: 1s;
+        transition-delay: 2s;
     }
 }
 
@@ -124,11 +117,11 @@ h2{
 }
 
 @keyframes infinitebox{
-    0%{
-        transform: translateX(0%);
+    from{
+        transform: translateX(0);
     }
 
-    100%{
-        transform: translateX(1490%);
+    to{
+        transform: translateX(100vw);
     }
 }
