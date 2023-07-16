@@ -3,4 +3,13 @@ body{
 
     justify-content: center;
     align-items: center;
-} 
+    flex-direction: column;
+}
+
+/*2 task*/
+
+.boxrect:hover{
+    fill: blue;
+    stroke: blue;
+}
+
