@@ -1,0 +1,85 @@
+.big-header{
+    width: 330px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-one{
+    width: 161px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-two{
+    width: 142px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-p-svg-mail{
+    width: 135px;
+    height: 16px;
+
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    margin: 0;
+    
+    transition:color 1s;
+}
+
+.header-p-svg-call{
+    width: 122px;
+    height: 16px;
+
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    margin: 0; 
+
+    transition:color 1s;
+}
+
+.hvs{
+    transition:fill 1s;
+}
+
+
+.header-one:hover .hvs{
+    fill: #2196F3;
+}
+
+.header-one:hover .header-p-svg-mail{
+    color: #2196F3;
+}
+
+.header-two:hover .hvs{
+    fill: #2196F3;
+}
+
+.header-two:hover .header-p-svg-call{
+    color: #2196F3;
+}
+
