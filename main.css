@@ -83,3 +83,116 @@
     color: #2196F3;
 }
 
+#icon-instagram, #icon-twitter, #icon-facebook, #icon-linkedin2{
+    width: 20px;
+    height: 20px;
+
+    margin: 0;
+}
+
+
+.team{
+    width: 270px;
+    height: 428px;
+
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.img-team{
+    width: 270px;
+    height: 260px;
+}
+
+.title-team{
+    color: #212121;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle-team{
+    color: #212121;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.social-team{
+    width: 190px;
+
+    margin-left: 52px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-team-one, .circle-team-two, .circle-team-three, .circle-team-four{
+    transition: fill 1s;
+}
+
+.social-team-all-one:hover .circle-team-one{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-one:hover .social-team-one{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+.social-team-all-two:hover .circle-team-two{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-two:hover .social-team-two{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+.social-team-all-three:hover .circle-team-three{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-three:hover .social-team-three{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+.social-team-all-four:hover .circle-team-four{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-four:hover .social-team-four{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+
+
+
