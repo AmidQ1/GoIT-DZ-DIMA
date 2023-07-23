@@ -193,6 +193,27 @@
     fill: #FFFFFF;
 }
 
+.big-box-client{
+    width: 170px;
+    height: 92px;
+}
+
+.box-client{
+    width: 170px;
+    height: 92px;
+
+    border-radius: 4px; 
+    border: 1px solid #AFB1B8;
+}
+
+.big-box-client:hover .client{
+    fill: #2196F3;
+}
+
+.big-box-client:hover .box-client{
+    border: 1px solid #2196F3;
+}
+
 
 
 
