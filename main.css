@@ -53,7 +53,7 @@ body{
 }
 
 /*2 task*/
-.square-one, .square-two, .square-three{
+.square{
     width: 250px;
     height: 250px;
 }
@@ -80,4 +80,34 @@ body{
     position: relative;
 
     left: 150px;
+}
+
+.square-four{
+    background-color: rgb(207, 97, 97);
+
+    position: relative;
+
+    top: 100px;
+    right: 150px;
+
+    z-index: 1;
+}
+
+.square-five{
+    background-color: rgb(120, 118, 221);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.square-six{
+    background-color: rgb(155, 211, 141);
+
+    position: relative;
+
+    bottom: 100px;
+    left: 150px;
+
+    z-index: 1;
 }
