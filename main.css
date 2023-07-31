@@ -1,1 +1,83 @@
-/*My DZ*/
+body{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*1 task*/
+.big-box{
+    width: 1170px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-task{
+    width: 370px;
+    height: 294px;
+}
+
+.box-text{
+    width: 370px;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.80);
+    flex-shrink: 0;
+
+    position: relative;
+
+    top: -75px;    
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.text-status{
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    letter-spacing: 0.42px;
+    text-transform: uppercase;    
+}
+
+/*2 task*/
+.square-one, .square-two, .square-three{
+    width: 250px;
+    height: 250px;
+}
+
+.square-one{
+    background-color: rgb(207, 97, 97);
+
+    position: relative;
+
+    right: 150px;
+}
+
+.square-two{
+    background-color: rgb(120, 118, 221);
+
+    position: absolute;
+
+    top: 650px;
+}
+
+.square-three{
+    background-color: rgb(155, 211, 141);
+
+    position: relative;
+
+    left: 150px;
+}
