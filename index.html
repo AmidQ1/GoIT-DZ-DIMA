@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="modal.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>My DZ</h1>
+    <!--Banner-->
+        <div class="site-banner">
+            <h1 class="title-banner">Ефективні рішення для вашого бізнесу</h1>
+            <button class="button-banner" data-modal-open>Замовити послугу</button>
+        </div>
+                <div class="big-form-banner" data-modal>
+                    <div class="form-banner">
+                        <div class="form-button">
+                            <button class="button-img-close" data-modal-close>×</button>
+                        </div>
+                        <h2 class="title-form">Залиште свої дані, ми вам передзвонимо</h2>
+                        <form>
+                            <div>
+                                <p class="form-name">Ім'я</p>
+                                <img class="form-img" src="./img/person-black-18dp.svg" alt="name">
+                                <input class="form-text" type="text">
+                            </div>
+                            <div>
+                                <p class="form-name">Телефон</p>
+                                <img class="form-img" src="./img/phone-black-18dp.svg" alt="name">
+                                <input class="form-text" type="phone">
+                            </div>
+                            <div>
+                                <p class="form-name">Пошта</p>
+                                <img class="form-img" src="./img/email-black-18dp.svg" alt="name">
+                                <input class="form-text" type="email">
+                            </div>
+                            <div>
+                                <p class="form-name">Коментар</p>
+                                <textarea class="form-mess" placeholder="Введіть текст"></textarea>
+                            </div>
+                            <div class="input-checkbox">
+                                <input class="form-checkbox" type="checkbox">
+                                <p class="form-conditions">Погоджуюся з розсилкою та приймаю</p>
+                                <a class="form-a" href="#">Умови договору</a>
+                            </div>
+                        </form>
+                            <div class="button-send-form">
+                                <button class="button-send">Відправити</button>
+                            </div>
+                    </div>
+                </div>
+
 </body>
 </html>
