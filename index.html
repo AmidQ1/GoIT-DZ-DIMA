@@ -9,14 +9,15 @@
 </head>
 <body>
     <!--Banner-->
-    <div class="form-banner-shadow">
+    
         <div class="site-banner">
             <h1 class="title-banner">Ефективні рішення для вашого бізнесу</h1>
             <button class="button-banner" data-modal-open>Замовити послугу</button>
         </div>
-            
-                <div class="big-form-banner" data-modal>
-                    <div class="form-banner">
+
+    <div class="form-banner-shadow">     
+                
+                    <div class="form-banner" data-modal>
                         <div class="form-button">
                             <button class="button-img-close" data-modal-close>×</button>
                         </div>
@@ -78,10 +79,11 @@
                                 <button class="button-send">Відправити</button>
                             </div>
                     </div>
-                </div>
-    </div>    
+                
+        </div>    
         <script>
                 (() => {
+                    console.log('start')
                     const refs = {
                     openModalBtn: document.querySelector("[data-modal-open]"),
                     closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -92,6 +94,7 @@
                     refs.closeModalBtn.addEventListener("click", toggleModal);
 
                     function toggleModal() {
+                        console.log('start')
                     console.log("toggle");
                     refs.modal.classList.toggle("is-hidden");
                     // document.body.classList.toggle("no-scroll");
