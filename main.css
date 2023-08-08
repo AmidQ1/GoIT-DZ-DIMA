@@ -85,7 +85,7 @@
     z-index: 1;
 }
 
-.form-img{
+.form-img-big{
     width: 18px;
     height: 18px;
 
@@ -110,8 +110,14 @@
 }
 
 .form-banner-shadow{
-    background-color: black;
+    background: rgba(0, 0, 0, 0.20);
     opacity: 0.5;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .form-mess::placeholder{
@@ -138,7 +144,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .form-banner{
@@ -251,4 +256,36 @@
     justify-content: center;
 
     padding-top: 30px;
+}
+
+.form-hover-one:hover .form-img{
+    fill:#2196F3 ;
+}
+
+.form-hover-one:hover .form-text{
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+}
+
+.form-hover-two:hover .form-img{
+    fill:#2196F3 ;
+}
+
+.form-hover-two:hover .form-text{
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+}
+
+.form-hover-three:hover .form-img{
+    fill:#2196F3 ;
+}
+
+.form-hover-three:hover .form-text{
+    border-radius: 4px;
+    border: 1px solid #2196F3;
+}
+
+.form-mess:hover{
+    border-radius: 4px;
+    border: 1px solid #2196F3;
 }
