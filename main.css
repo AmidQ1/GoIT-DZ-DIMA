@@ -1,3 +1,7 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 /*Banner*/
 .site-banner{
     width: 100%;
@@ -21,7 +25,6 @@
     color: #FFF;
     text-align: center;
 
-    font-family: "Roboto", sans-serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
@@ -40,7 +43,6 @@
     color: #FFF;
     text-align: center;
 
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -59,10 +61,10 @@
 /*form*/
 
 .form-name{
+    padding-top: 12px;
     padding-left: 25px;
 
     color: #757575;
-    font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -73,6 +75,8 @@
 .form-text{
     width: 408px;
     height: 40px;
+
+    margin-bottom: 12px;
     
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
@@ -124,7 +128,6 @@
     height: 96px;
     
     color: rgba(117, 117, 117, 0.50);
-    font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -171,10 +174,13 @@
     left: 475px;
 }
 
+.button-img-close:hover{
+    color:#2196F3 ;
+}
+
 .title-form{
     color: #212121;
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -207,7 +213,6 @@
 
 .form-conditions{
     color: #757575;
-    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -222,7 +227,6 @@
 
 .form-a{
     color: #2196F3;
-    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -234,7 +238,6 @@
 .button-send{
     color: #FFF;
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -257,32 +260,15 @@
     padding-top: 30px;
 }
 
-.form-hover-one:hover .form-img{
+.form-hover:hover .form-img{
     fill:#2196F3 ;
 }
 
-.form-hover-one:hover .form-text{
+.form-hover:hover .form-text{
     border-radius: 4px;
     border: 1px solid #2196F3;
 }
 
-.form-hover-two:hover .form-img{
-    fill:#2196F3 ;
-}
-
-.form-hover-two:hover .form-text{
-    border-radius: 4px;
-    border: 1px solid #2196F3;
-}
-
-.form-hover-three:hover .form-img{
-    fill:#2196F3 ;
-}
-
-.form-hover-three:hover .form-text{
-    border-radius: 4px;
-    border: 1px solid #2196F3;
-}
 
 .form-mess:hover{
     border-radius: 4px;
@@ -291,4 +277,185 @@
 
 .is-hidden{
     display: none;
+}
+
+
+.social-team{
+    width: 190px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-team-one, .circle-team-two, .circle-team-three, .circle-team-four{
+    transition: fill 1s;
+}
+
+.social-team-all-one:hover .circle-team-one{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-one:hover .social-team-one{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+.social-team-all-two:hover .circle-team-two{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-two:hover .social-team-two{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+.social-team-all-three:hover .circle-team-three{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-three:hover .social-team-three{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+.social-team-all-four:hover .circle-team-four{
+    transition: fill 1s;
+    fill: #2196F3;
+}
+
+.social-team-all-four:hover .social-team-four{
+    transition: fill 1s;
+    fill: #FFFFFF;
+}
+
+/*FOOTER*/
+
+.footer-site{
+    width: 100%;
+    height: 252px;
+
+    background: #2F303A;
+
+    margin-top: 30px;
+
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.footer-info{
+    margin-left: 215px;
+    margin-top: 60px;
+}
+
+.footer-city{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.42px;
+}
+
+.footer-email{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.footer-tel{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.footer-joing{
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.footer-name{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-text-email{
+    width: 358px;
+    height: 50px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    margin-right: 12px;
+
+    padding-left: 16px;
+
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+.footer-text-email::placeholder{
+    width: 47px;
+    height: 20px;
+
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+.footer-button-ps{
+    width: 200px;
+    height: 50px;
+
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.footer-img-telegram{
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+
+    right: 47px;
+    top: 6px;
+}
+
+.footer-email-text-and-telegram{
+    margin-top: 60px;
+    margin-left: 109px;
 }
