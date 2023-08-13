@@ -111,8 +111,7 @@
 
 .form-banner-shadow{
     background: rgba(0, 0, 0, 0.20);
-    opacity: 0.5;
-
+    
     position: fixed;
     top: 0;
     bottom: 0;
@@ -134,6 +133,7 @@
     
 }
 
+
 .big-form-banner{
     display: flex;
 
@@ -143,8 +143,6 @@
 .form-banner{
     width: 528px;
     height: 661px;
-
-    z-index: 999;
 
     position: absolute;
     top: 50%;
