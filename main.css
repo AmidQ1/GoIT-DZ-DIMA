@@ -470,3 +470,14 @@ body{
     margin-top: 60px;
     margin-left: 109px;
 }
+
+.footer-button-ps::after{
+    display: inline-block;
+    content: "";
+    background: url(./img/icon_send.svg);
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    margin-left: 13px;
+    transform: translateY(20%);
+}
