@@ -269,6 +269,13 @@ body{
     border: 1px solid #2196F3;
 }
 
+.form-text:focus{
+    color: #2196F3;
+}
+
+.form-mess:focus{
+    color: #2196F3;
+}
 
 .form-mess:hover{
     border-radius: 4px;
@@ -414,6 +421,10 @@ body{
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.48px;
+}
+
+.footer-text-email:focus{
+    color: #2196F3;
 }
 
 .footer-text-email::placeholder{
