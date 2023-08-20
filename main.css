@@ -1,1 +1,237 @@
-/*My DZ*/
+body{
+    height: 1500px;
+    font-family: "Roboto", sans-serif;
+}
+
+/*info*/
+
+.info-site{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.info-big{
+    width: 1170px;
+    height: 1160px;
+}
+
+.info-box-big{
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.info-box{
+    width: 370px;
+    height: 404px;
+
+    border: 1px solid #EEE;
+    background: #FFF; 
+    
+    transition: 1s;
+}
+
+.info-title{
+    width: 322px;
+
+    color: #212121;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+
+    margin-bottom: 0;
+    margin-left: 24px;
+}
+
+.info-subtitle{
+    width: 322px;
+
+    color: #757575;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+
+    margin-top: 0;
+    margin-left: 24px;
+}
+
+.info-img{ 
+    width: 370px;
+    height: 294px;
+
+    z-index: 1;
+}
+
+
+.info-big-text{
+    overflow: hidden;
+
+    position: absolute;
+}
+
+.info-box-text{
+    width: 370px;
+    height: 293px;
+
+    z-index: 2;
+
+    transform: translateY(-100%);
+
+    background-color: rgba(33, 150, 243, 0.90);   
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s;
+}
+
+.info-text{
+    width: 322px;
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+}
+
+/*info-hover*/
+
+.info-hover-box1:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box1:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box2:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box2:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box3:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box3:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box4:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box4:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box5:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box5:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box6:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box6:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box7:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box7:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box8:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box8:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
+
+.info-hover-box9:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    transition: 1s;
+}
+
+.info-hover-box9:hover .info-box-text{
+    transform: translateY(0);
+
+    transition: 1s;
+}
