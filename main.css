@@ -10,6 +10,8 @@ body{
 
     align-items: center;
     justify-content: center;
+
+    margin-top: 700px;
 }
 
 .info-big{
@@ -234,4 +236,254 @@ body{
     transform: translateY(0);
 
     transition: 1s;
+}
+
+/*banner*/
+
+.button-banner{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+
+    width: 216px;
+    height: 50px;
+
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*form*/
+
+.form-site{
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease-in;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-site.is-hidden{
+    pointer-events: none;
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(-100%);
+    transition: opacity 250ms ease-in, transform 250ms ease-in;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form{
+    width: 528px;
+    height: 581px;
+
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box-button{
+    position: relative;
+
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+
+    justify-content: end;
+}
+
+.button-img-close{
+    width: 30px;
+    height: 30px;
+
+    fill: #FFF;
+    border-color: rgba(0, 0, 0, 0.10);
+    border-width: 1px;
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+
+.form-title{
+    color: #212121;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+
+    margin-bottom: 0;
+}
+
+.big-box-form{
+    width: 448px;
+    height: 342px;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.box-form{
+    width: 448px;
+    height: 58px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 60px;
+    margin-bottom: 10px;
+
+    position: relative;
+}
+
+.form-box-title{
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    margin-bottom: 5px;
+}
+
+.form-svg{
+    position: absolute;
+
+    top: 30px;
+    left: 12px;
+}
+
+.input-text{
+    width: 428px;
+    height: 40px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+
+    padding-left: 35px;
+}
+
+.messega{
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.box-form-m{
+    width: 428px;
+    height: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 40px;
+
+    position: relative;
+}
+
+.box-check{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.form-checkbox{
+    width: 16px;
+    height: 15px;
+
+    margin-right: 8px;
+}
+
+.form-conditions{
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-right: 8px;
+}
+
+.form-a{
+    color: #2196F3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+}
+
+.box-button-send{
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.button-send{
+    width: 200px;
+    height: 50px;
+
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+/*hover, focus, form*/
+
+.button-img-close:hover{
+    color: #2196F3;
+}
+
+.box-form:hover .input-text, .box-form:hover .form-svg-hover, .messega:hover{
+    color: #2196F3;
+    fill: #2196F3;
+}
+
+.input-text:focus{
+    color: #2196F3;
+}
+
+.messega:focus{
+    color: #2196F3;
 }
