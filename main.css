@@ -229,131 +229,98 @@ body{
 }
 
 /*info-hover*/
+.info-hover:hover .info-box, .info-hover:hover .info-box-text{
+    transition: 1s;
+}
 
 .info-hover-box1:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box1:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box2:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box2:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box3:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box3:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box4:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box4:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box5:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box5:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box6:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box6:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box7:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box7:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box8:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box8:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 .info-hover-box9:hover .info-box{
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-    transition: 1s;
 }
 
 .info-hover-box9:hover .info-box-text{
     transform: translateY(0);
-
-    transition: 1s;
 }
 
 /*menu*/
@@ -398,7 +365,7 @@ body{
 .menu-box .menu-li{
     padding-left: 20px;
     
-    background: url(https://o.remove.bg/downloads/89b3a194-14a7-40aa-be4f-2bc344517a6c/1621527354_18-phonoteka_org-p-krug-bez-zadnego-fona-21-removebg-preview.png) left center no-repeat;
+    background: url(./img/img_circle.png) left center no-repeat;
     background-size: 16px 16px;
 }
 
