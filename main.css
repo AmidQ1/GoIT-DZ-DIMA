@@ -357,7 +357,6 @@ body{
     opacity: 1;
     visibility: visible;
     transition: opacity 250ms ease-in;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     z-index: 3;
 }
@@ -368,7 +367,6 @@ body{
     visibility: visible;
     transform: translateY(-100%);
     transition: opacity 250ms ease-in, transform 250ms ease-in;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form{
@@ -568,4 +566,8 @@ body{
 
 .messega:focus{
     color: #2196F3;
+}
+
+.input-text:focus ~ .form-svg path {
+    fill: #2196F3;
 }
