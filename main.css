@@ -229,98 +229,18 @@ body{
 }
 
 /*info-hover*/
-.info-hover:hover .info-box, .info-hover:hover .info-box-text{
+.info-hover-box:hover .info-box{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
     transition: 1s;
 }
 
-.info-hover-box1:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box1:hover .info-box-text{
+.info-hover-box:hover .info-box-text{
     transform: translateY(0);
-}
 
-.info-hover-box2:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box2:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box3:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box3:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box4:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box4:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box5:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box5:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box6:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box6:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box7:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box7:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box8:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box8:hover .info-box-text{
-    transform: translateY(0);
-}
-
-.info-hover-box9:hover .info-box{
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.info-hover-box9:hover .info-box-text{
-    transform: translateY(0);
+    transition: 1s;
 }
 
 /*menu*/
