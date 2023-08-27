@@ -359,14 +359,24 @@ body{
 }
 
 .menu-box{
-    list-style: none;
+    list-style: none; 
 }
 
-.menu-box .menu-li{
-    padding-left: 20px;
-    
-    background: url(./img/img_circle.png) left center no-repeat;
-    background-size: 16px 16px;
+.menu-text::before{
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+
+    content: "";
+
+    display: block;
+
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotate(45deg);
+
+    margin-left: 10px;
 }
 
 .menu-li{
@@ -374,6 +384,8 @@ body{
 }
 
 .menu-text{
+    margin-left: 50px;
+
     width: 150px;
 
     text-decoration: none;
