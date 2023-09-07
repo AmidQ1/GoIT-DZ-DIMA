@@ -28,9 +28,9 @@ body{
     background: rgba(47, 48, 58, 0.80);
     flex-shrink: 0;
 
-    position: absolute;
+    position: relative;
 
-    top: 299px;    
+    top: -75px;    
     
     display: flex;
 
@@ -71,7 +71,7 @@ body{
 
     position: absolute;
 
-    top: 549px;
+    top: 650px;
 }
 
 .square-three{
