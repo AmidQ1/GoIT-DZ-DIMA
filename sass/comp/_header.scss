@@ -1,0 +1,68 @@
+.header{
+    width: 100vw;
+    height: 72px;
+    background-color: #122538;
+
+    display: flex;
+
+    align-items: center;
+
+    &_button{
+        width: 40px;
+        height: 40px;
+        border-radius: 25%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        background-color: transparent;
+        border:none;
+
+        &-catalog{
+            width: 126px;
+            height: 40px;
+            border:none;
+
+            background-color: #fff3;
+            border-radius: 5%;
+        }
+
+        &-naite{
+            width: 85px;
+            height: 45px;
+
+            margin-left: -5px;
+
+            background-color: green;
+
+            border-radius: 0 10% 10% 0;
+        }
+    }
+
+    &_box{
+        position: relative;
+    }
+
+    &_input{
+        width:  540px;
+        height: 40px;
+
+        padding-left: 40px;
+    }
+
+    &_lup{
+        width: 30px;
+        height: auto;
+
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+
+    &_logo{
+        width: 240px;
+        height: auto;
+    }
+}
