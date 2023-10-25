@@ -3,7 +3,17 @@
   height: 72px;
   background-color: #122538;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.header-site {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-site_box {
+  margin-right: 30px;
 }
 .header_button {
   width: 40px;
@@ -47,4 +57,58 @@
 .header_logo {
   width: 240px;
   height: auto;
+}
+
+.svg {
+  margin-right: 10px;
+}
+
+.main {
+  display: flex;
+}
+.main_menu-ul {
+  width: 280px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.main_menu-ul-a {
+  margin-bottom: 15px;
+}
+.main_menu-ul-li {
+  font-size: 18px;
+  line-height: 31px;
+}
+.main_items-it {
+  display: flex;
+}
+.main_items-box {
+  border: 1px solid gray;
+  margin-top: 16px;
+  margin-right: 2px;
+  width: 170px;
+  height: 250px;
+  margin-bottom: 25px;
+  border-width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_items-box_img {
+  margin: 16px;
+  margin-bottom: 0;
+}
+.main_items-box_title {
+  margin: 16px;
+  font-size: 14px;
+  color: #333;
+}
+.main_items-box_subtitle {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.main_items-box_subtitle-text {
+  margin: 16px;
+  margin-top: 0;
+  font-size: 24px;
 }

@@ -4,70 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <button class="header_button">
-            <svg
-                width="24"
-                height="24"
-                fill="#fff"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                ></path>
-            </svg>                           
-        </button>
+        <section class="header-site">
+            <article class="header-site_box">
+                <button class="header_button">
+                    <svg
+                        width="60"
+                        height="auto"
+                        fill="#fff"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>                           
+                </button>
+            </article>
 
-        <img class="header_logo" src="img/rozetka_logo.svg" alt="logo">
+            <article class="header-site_box">
+                <img class="header_logo" src="img/rozetka_logo.svg" alt="logo">
+            </article>
 
-        <button class="header_button-catalog">Каталог</button>
+            <article class="header-site_box">
+                <button class="header_button-catalog">Каталог</button>
+            </article>
+            
+            <article class="header-site_box">
+                <div class="header_box">
+                    <img class="header_lup" src="img/lupa.svg" alt="lup">
+                    <input class="header_input"  type="text" name="search" placeholder="Я шукаю...">
+                    <button class="header_button-naite">Найти</button>
+                </div>
+            </article>
 
-        <div class="header_box">
-            <img class="header_lup" src="img/lupa.svg" alt="lup">
-            <input class="header_input"  type="text" name="search" placeholder="Я шукаю...">
-            <button class="header_button-naite">Найти</button>
-        </div>
-
-        <img src="img/person.svg" alt="img" width="30px" height="auto" fill="#fff">
-        <img src="img/koshuk.svg" alt="img" width="30px" height="auto" fill="#fff">
+            <article class="header-site_box">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 128 128" fill="none">
+                    <path d="M30 49C30 67.7 45.3 83 64 83C82.7 83 98 67.7 98 49C98 30.3 82.7 15 64 15C45.3 15 30 30.3 30 49ZM90 49C90 63.3 78.3 75 64 75C49.7 75 38 63.3 38 49C38 34.7 49.7 23 64 23C78.3 23 90 34.7 90 49Z" fill="white"/>
+                    <path d="M24.4 119.4C35 108.8 49 103 64 103C79 103 93 108.8 103.6 119.4L109.3 113.7C97.2 101.7 81.1 95 64 95C46.9 95 30.8 101.7 18.7 113.7L24.4 119.4Z" fill="white"/>
+                </svg>
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 460 298" fill="none">
+                    <path d="M17 34H65.733L135.15 285.033C137.133 292.4 143.933 297.5 151.583 297.5H364.933C371.733 297.5 377.683 293.533 380.516 287.3L458.149 108.8C460.416 103.417 459.849 97.467 456.732 92.65C453.615 87.833 448.232 85 442.565 85H206.833C197.483 85 189.833 92.65 189.833 102C189.833 111.35 197.483 119 206.833 119H416.5L353.6 263.5H164.333L94.917 12.467C92.934 5.1 86.134 0 78.484 0H17C7.65 0 0 7.65 0 17C0 26.35 7.65 34 17 34Z" fill="white"/>
+                </svg>
+            </article>
+        </section>
     </header>
 
-    <main>
-        <div>
-            <ul>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
-                <li><a href="">Ноутбуки та комп’ютери</a></li>
+    <main class="main">
+        <div class="main_menu">
+            <ul class="main_menu-ul">
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a" href="">Ноутбуки та комп’ютери</a></li>
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a"href="">Ноутбуки та комп’ютери</a></li>
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a"href="">Ноутбуки та комп’ютери</a></li>
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a"href="">Ноутбуки та комп’ютери</a></li>
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a"href="">Ноутбуки та комп’ютери</a></li>
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a"href="">Ноутбуки та комп’ютери</a></li>
+                <li class="main_menu-ul-li"><a class="main_menu-ul-a"href="">Ноутбуки та комп’ютери</a></li>
             </ul>
         </div>
 
-        <section>
+        <section class="main_items">
             <article>
-                <img src="img/img1.jpg" alt="roz">
-                <img src="img/img2.jpg" alt="roz">
-                <img src="img/img3.jpg" alt="roz">
-                <img src="img/img4.jpg" alt="roz">
-                <img src="img/img5.jpg" alt="roz">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/img1.jpg" alt="roz">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/img2.jpg" alt="roz">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/img3.jpg" alt="roz">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </article>
-
-            <article>
-                <div>
-                    <img src="img/img6.webp" alt="">
-                    <h3>Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <span>22 380$</span>
+            <article class="main_items-it">
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
+                </div>
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
+                </div>
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
+                </div>
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
+                </div>
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
+                </div>
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
+                </div>
+                <div class="main_items-box">
+                    <img class="main_items-box_img" src="img/img6.webp" alt="">
+                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
+                    <div    class="main_items-box_subtitle">
+                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    </div>
                 </div>
             </article>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

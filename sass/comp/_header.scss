@@ -2,15 +2,29 @@
     width: 100vw;
     height: 72px;
     background-color: #122538;
-
     display: flex;
 
+    justify-content: center;
     align-items: center;
+
+    &-site{
+        width: 1400px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        &_box{
+            margin-right: 30px;
+        }
+    }
+
 
     &_button{
         width: 40px;
         height: 40px;
         border-radius: 25%;
+       
 
         display: flex;
 
@@ -19,6 +33,7 @@
 
         background-color: transparent;
         border:none;
+
 
         &-catalog{
             width: 126px;
@@ -65,4 +80,8 @@
         width: 240px;
         height: auto;
     }
+}
+
+.svg{
+    margin-right: 10px;
 }
