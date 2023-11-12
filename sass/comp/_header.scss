@@ -1,0 +1,31 @@
+.header{
+    width: 100vw;
+    height: 72px;
+    background-color: #122538;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    & .navbar{
+        width: 70%;
+
+        &-brand{
+            font-size: 28px;
+            color: #fff !important;
+        }
+    }
+
+    & .bg-body-tertiary{
+        background-color: #122538 !important;
+    }
+
+    & .nav-link{
+        font-size: 16px;
+        color: #fff !important;
+    }
+
+    & .form-control{
+        width: 530px;
+    }
+}
