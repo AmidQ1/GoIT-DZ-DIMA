@@ -7,81 +7,25 @@
     justify-content: center;
     align-items: center;
 
-    &-site{
-        width: 1400px;
-        display: flex;
+    & .navbar{
+        width: 70%;
 
-        justify-content: center;
-        align-items: center;
-
-        &_box{
-            margin-right: 30px;
+        &-brand{
+            font-size: 28px;
+            color: #fff !important;
         }
     }
 
-
-    &_button{
-        width: 40px;
-        height: 40px;
-        border-radius: 25%;
-       
-
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-        background-color: transparent;
-        border:none;
-
-
-        &-catalog{
-            width: 126px;
-            height: 40px;
-            border:none;
-
-            background-color: #fff3;
-            border-radius: 5%;
-        }
-
-        &-naite{
-            width: 85px;
-            height: 45px;
-
-            margin-left: -5px;
-
-            background-color: green;
-
-            border-radius: 0 10% 10% 0;
-        }
+    & .bg-body-tertiary{
+        background-color: #122538 !important;
     }
 
-    &_box{
-        position: relative;
+    & .nav-link{
+        font-size: 16px;
+        color: #fff !important;
     }
 
-    &_input{
-        width:  540px;
-        height: 40px;
-
-        padding-left: 40px;
+    & .form-control{
+        width: 530px;
     }
-
-    &_lup{
-        width: 30px;
-        height: auto;
-
-        position: absolute;
-        top: 7px;
-        left: 7px;
-    }
-
-    &_logo{
-        width: 240px;
-        height: auto;
-    }
-}
-
-.svg{
-    margin-right: 10px;
 }

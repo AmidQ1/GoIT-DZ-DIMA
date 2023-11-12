@@ -9,51 +9,42 @@
 </head>
 <body>
     <header class="header">
-        <section class="header-site">
-            <article class="header-site_box">
-                <button class="header_button">
-                    <svg
-                        width="60"
-                        height="auto"
-                        fill="#fff"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"
-                        ></path>
-                    </svg>                           
-                </button>
-            </article>
-
-            <article class="header-site_box">
-                <img class="header_logo" src="img/rozetka_logo.svg" alt="logo">
-            </article>
-
-            <article class="header-site_box">
-                <button class="header_button-catalog">Каталог</button>
-            </article>
-            
-            <article class="header-site_box">
-                <div class="header_box">
-                    <img class="header_lup" src="img/lupa.svg" alt="lup">
-                    <input class="header_input"  type="text" name="search" placeholder="Я шукаю...">
-                    <button class="header_button-naite">Найти</button>
-                </div>
-            </article>
-
-            <article class="header-site_box">
-                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 128 128" fill="none">
-                    <path d="M30 49C30 67.7 45.3 83 64 83C82.7 83 98 67.7 98 49C98 30.3 82.7 15 64 15C45.3 15 30 30.3 30 49ZM90 49C90 63.3 78.3 75 64 75C49.7 75 38 63.3 38 49C38 34.7 49.7 23 64 23C78.3 23 90 34.7 90 49Z" fill="white"/>
-                    <path d="M24.4 119.4C35 108.8 49 103 64 103C79 103 93 108.8 103.6 119.4L109.3 113.7C97.2 101.7 81.1 95 64 95C46.9 95 30.8 101.7 18.7 113.7L24.4 119.4Z" fill="white"/>
-                </svg>
-                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="40" height="auto" viewBox="0 0 460 298" fill="none">
-                    <path d="M17 34H65.733L135.15 285.033C137.133 292.4 143.933 297.5 151.583 297.5H364.933C371.733 297.5 377.683 293.533 380.516 287.3L458.149 108.8C460.416 103.417 459.849 97.467 456.732 92.65C453.615 87.833 448.232 85 442.565 85H206.833C197.483 85 189.833 92.65 189.833 102C189.833 111.35 197.483 119 206.833 119H416.5L353.6 263.5H164.333L94.917 12.467C92.934 5.1 86.134 0 78.484 0H17C7.65 0 0 7.65 0 17C0 26.35 7.65 34 17 34Z" fill="white"/>
-                </svg>
-            </article>
-        </section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <b><a class="navbar-brand" href="#">ROZETKA</a></b>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="main">
@@ -100,52 +91,66 @@
             </article>
             <article class="main_items-it">
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
                 <div class="main_items-box">
-                    <img class="main_items-box_img" src="img/img6.webp" alt="">
-                    <h3 class="main_items-box_title">Ноутбук Acer Aspire 3 A315-58-553J</h3>
-                    <div    class="main_items-box_subtitle">
-                        <span class="main_items-box_subtitle-text">22 380$</span>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/img6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ноутбук Acer Aspire 3 A315-58-553J</h5>
+                          <a href="#" class="btn btn-primary">22 380$</a>
+                        </div>
                     </div>
                 </div>
             </article>
