@@ -1,21 +1,21 @@
 // task 1
 
-let age = 16;
+const age = 16;
 console.log("Мені  " + age + " років.");
 
 // task 2
 
-let name = "Dima";
+const name = "Dima";
 console.log("I`m " + name);
 
 // task 3 
 
-let isStudent = true;
+const isStudent = true;
 console.log("Student? " + isStudent);
 
 // task 4
 
-let myString = "Життя - це ігра, і тільки від тебе залежить, на яку кінцівку ти її закінчиш!";
+const myString = "Життя - це ігра, і тільки від тебе залежить, на яку кінцівку ти її закінчиш!";
 console.log("Моя любима цитата: " + myString);
 
 // task 5
@@ -26,7 +26,7 @@ console.log("myNumber: " + myNumber)
 
 // task 6
 
-let myNull = null;
+const myNull = null;
 console.log("myNull: " + myNull)
 
 // task 7
