@@ -7,6 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My DZ</h1>
+    <script>
+        // 1
+        let celsiusTemperature = 25;
+        let fahrenheitTemperature = (celsiusTemperature * 9/5) + 32;
+        console.log("Температура в Фаренгейтах: " + fahrenheitTemperature);
+
+        // 2
+        let daysInMonth = 30;
+        let hoursInMonth = daysInMonth * 24;
+        let minutesInMonth = hoursInMonth * 60;
+        console.log("Годин у місяці: " + hoursInMonth);
+        console.log("Хвилин у місяці: " + minutesInMonth);
+
+        // 3
+        let health = 100;
+        let energy = 80;
+        health -= 20;
+        energy -= 10;
+        console.log("Рівень здоров'я гравця: " + health);
+        console.log("Рівень енергії гравця: " + energy);
+
+        // 4
+        let purchaseAmount = 100;
+        let discount = 0.1; 
+        let discountedAmount = purchaseAmount * (1 - discount);
+        console.log("Сума покупки після знижки: " + discountedAmount);
+
+        // 5
+        let floatingNumber = 3.75;
+        let roundedNumber = Math.floor(floatingNumber);
+        console.log("Округлений результат: " + roundedNumber);
+
+        // 6
+        let floatString = "5.25";
+        let parsedFloat = parseFloat(floatString);
+        console.log("Перетворення рядка у десяткове число: " + parsedFloat);
+
+        // 7
+        let integerString = "10";
+        let parsedInteger = parseInt(integerString);
+        console.log("Перетворення рядка у ціле число: " + parsedInteger);
+
+        // 8
+        let number = 16;
+        let squareRoot = Math.sqrt(number);
+        console.log("Квадратний корінь числа: " + squareRoot);
+
+        // 9
+        let integerValue = 20;
+        let stringNumber = "30";
+        let parsedStringNumber = parseInt(stringNumber);
+        console.log("Перетворення рядка у ціле число: " + parsedStringNumber);
+        let stringFromInteger = integerValue.toString();
+        console.log("Перетворення цілого числа у рядок: " + stringFromInteger);
+    </script>
 </body>
 </html>
