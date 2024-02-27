@@ -42,14 +42,58 @@
 
 
         //6
-        let name = "Luzhny Dima";
-        console.log(name.length);
-        console.log(name.toUpperCase());
-        console.log(name.charAt());
-        console.log(name.indexOf(" "))
-        console.log(name.replace("D", "@"))
-        let js = "JavaScript";
-        console.log(js.substring(0, 4))
-    </script>
+        // let name = "Luzhny Dima";
+        // console.log(name.length);
+        // console.log(name.toUpperCase());
+        // console.log(name.charAt());
+        // console.log(name.indexOf(" "))
+        // console.log(name.replace("D", "@"))
+        // let js = "JavaScript";
+        // console.log(js.substring(0, 4))
+
+
+
+
+
+        // 7
+        // let name = "Dima";
+        // let year = "16";
+        // let mood = "fine";
+        // let  message = "Hello! My name is " + name + " I am "+year+ " years old and I am in good mood today. I feel " + mood;
+        // let message2 = "Hello! My name is ${name}. I am ${year} years old and today I feel ${mood}";
+        // console.log(message2);
+        // console.log(message);
+        const userInput = prompt("enter minut:");
+        console.log(`your input is ${userInput}`);
+        
+        
+        
+
+        
+// hours
+        let numberHours = Math.floor(userInput/60);
+        console.log(numberHours + " hours");
+        let hours = numberHours % 24;
+        console.log(hours + " hours(2)");
+        let hoursMod = String(hours).padStart(2,"0");
+        
+        console.log(hoursMod + " hours(3)");
+// minute
+        let numberMinute = userInput % 60;
+        console.log(numberMinute + " minute")
+        let minutesMod = String(numberMinute).padStart(2,"0");
+        console.log(minutesMod + " minutes");
+// days 
+        let numberDays = Math.floor(numberHours/24);
+        console.log(numberDays + " days")
+        let daysMod = String(numberDays).padStart(3,"0");
+        console.log(daysMod + " days");
+
+        let month = Math.ceil(numberDays/30);
+        let monthMod = String(month).padStart(2,"0");
+        console.log(daysMod + " days");
+
+        console.log(`${monthMod} month ${daysMod} days ${hoursMod} hours ${minutesMod} minutes`);
+</script>
 </body>
 </html>
