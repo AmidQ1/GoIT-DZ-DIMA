@@ -63,37 +63,49 @@
         // let message2 = "Hello! My name is ${name}. I am ${year} years old and today I feel ${mood}";
         // console.log(message2);
         // console.log(message);
-        const userInput = prompt("enter minut:");
-        console.log(`your input is ${userInput}`);
+//         const userInput = prompt("enter minut:");
+//         console.log(`your input is ${userInput}`);
         
         
         
 
         
-// hours
-        let numberHours = Math.floor(userInput/60);
-        console.log(numberHours + " hours");
-        let hours = numberHours % 24;
-        console.log(hours + " hours(2)");
-        let hoursMod = String(hours).padStart(2,"0");
+// // hours
+//         let numberHours = Math.floor(userInput/60);
+//         console.log(numberHours + " hours");
+//         let hours = numberHours % 24;
+//         console.log(hours + " hours(2)");
+//         let hoursMod = String(hours).padStart(2,"0");
         
-        console.log(hoursMod + " hours(3)");
-// minute
-        let numberMinute = userInput % 60;
-        console.log(numberMinute + " minute")
-        let minutesMod = String(numberMinute).padStart(2,"0");
-        console.log(minutesMod + " minutes");
-// days 
-        let numberDays = Math.floor(numberHours/24);
-        console.log(numberDays + " days")
-        let daysMod = String(numberDays).padStart(3,"0");
-        console.log(daysMod + " days");
+//         console.log(hoursMod + " hours(3)");
+// // minute
+//         let numberMinute = userInput % 60;
+//         console.log(numberMinute + " minute")
+//         let minutesMod = String(numberMinute).padStart(2,"0");
+//         console.log(minutesMod + " minutes");
+// // days 
+//         let numberDays = Math.floor(numberHours/24);
+//         console.log(numberDays + " days")
+//         let daysMod = String(numberDays).padStart(3,"0");
+//         console.log(daysMod + " days");
 
-        let month = Math.ceil(numberDays/30);
-        let monthMod = String(month).padStart(2,"0");
-        console.log(daysMod + " days");
+//         let month = Math.ceil(numberDays/30);
+//         let monthMod = String(month).padStart(2,"0");
+//         console.log(daysMod + " days");
 
-        console.log(`${monthMod} month ${daysMod} days ${hoursMod} hours ${minutesMod} minutes`);
+//         console.log(`${monthMod} month ${daysMod} days ${hoursMod} hours ${minutesMod} minutes`);
+
+// 1
+let x = "x";
+let y = "y";
+let n = 101;
+let g = 3;
+console.log(`Гість ${x} ${y} поселяється в ${n} номер ${g}`);
+
+// 2
+let messAge = "Це        повідомлення з надлишковими пропусками.";
+let trimA = messAge.trim();
+console.log(trimA);
 </script>
 </body>
 </html>
