@@ -108,15 +108,36 @@
 // console.log(trimA);
 
 // 3
-const message = prompt( `Яка “офіційна” назва JavaScript?` );
-if (message ==="ECMAScript"){
-    console.log( 'Правильно!');
-}   else{
-    console.log(`Ви не знаєте? ECMAScript!`)
+// const message = prompt( `Яка “офіційна” назва JavaScript?` );
+// if (message ==="ECMAScript"){
+//     console.log( 'Правильно!');
+// }   else{
+//     console.log(`Ви не знаєте? ECMAScript!`)
+// }
+
+const as = false;
+const aj = as? `Але я відповів правильно.` : `Невірно, але я відповів правильно.` ;
+console.log(aj);
+
+// Задача 2 
+let a = 25;
+switch (a) {
+  case 0:{
+    textContent = 0;
+    break;
+    }
+  case 1:{
+    textContent = 1;
+    break;
+    }
+  case 2||3:{
+    textContent = '2,3';
+    break; 
+    }
+  default:{
+    textContent = 'Для цього значення немає визначеної дії';
+  }
 }
-
-
 </script>
-
 </body>
 </html>
