@@ -144,11 +144,23 @@
 //   }
 // }
 
-let a = 3;
-do{
-    console.log(a);
-    a -= 1;
-}while(a)
+// let a = 3;
+// do{
+//     console.log(a);
+//     a -= 1;
+// }while(a)
+
+
+let a = prompt("Ваш середній бал: ");
+while(true){
+    if(a<=7){
+        console.log("Bad")
+        break;
+    }
+    a = prompt("Ваш середній бал: ");
+}
+
+
 </script>
 </body>
 </html>
