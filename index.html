@@ -7,6 +7,139 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My DZ</h1>
+    <script>
+        // 1
+        let selectionOfDrink = prompt("What will you drink?");
+        switch(selectionOfDrink){
+            case  "coffee":{
+                alert("You ordered coffe!");
+                break;
+            }
+            case  "tea": {
+                alert("You ordered tea!");
+                break;
+            }
+            case "juice":{
+                alert("You ordered juice!");
+                break;
+            }
+            default:
+                alert("There is not such drink that you have chose.");
+            }
+
+        // 2
+        let whatDay = prompt("What dau is it today?");
+        switch(whatDay) {
+            case "monday":
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":{
+                alert("робочий день");
+                break;
+            }
+            case "saturday":
+            case "sunday":{
+                alert("вихідний");
+            }
+        }
+
+        // 3
+        let numberMonth = Number(prompt("Enter a number of month"));
+        switch(numberMonth) {
+            case 1:
+            case 2:
+            case 12:
+                alert ("зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                alert ("весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                alert("літо");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                alert("осінь");
+                break;
+            default:
+                alert ("невідома пора року");
+        }
+        
+        // 4
+        let numberMonthDays = Number(prompt("Enter a number of month"));
+        switch(numberMonthDays){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:{
+                alert("31");
+                break;
+            }
+            case 4:
+            case 6:
+            case 9:
+            case 11:{
+                alert("30");
+                break;
+            }
+            case 2:{
+                alert("28/29");
+            }
+        }
+
+        // 5
+        let choseColors = prompt("Green, yellow, red");
+        switch(choseColors){
+            case "green":{
+                alert("йти!");
+                break;
+            }
+            case "yellow":{
+                alert("чекати!");
+                break;
+            }
+            case "red":{
+                alert("стоп!");
+                break;
+            }
+            default:
+                alert("Невідомий колір");
+        }
+
+        // 6
+        let selectionOfOperations = prompt("+ - * /")
+        let numberOne =  Number(prompt("Enter first number"));
+        let numberTwo = Number(prompt("Enter second number"));
+        switch(selectionOfOperations){
+            case "+": {
+                alert(`${numberOne} + ${numberTwo} = ${numberOne + numberTwo}`);
+                break;
+            }
+            case "-": {
+                alert(`${numberOne} - ${numberTwo} = ${numberOne - numberTwo}`);
+                break;
+            }
+            case "*": {
+                alert(`${numberOne} * ${numberTwo} = ${numberOne * numberTwo}`);
+                break;
+            }  
+            case "/": {
+                if(numberTwo !== 0) {
+                    alert(`${numberOne} / ${numberTwo} = ${numberOne / numberTwo}`);
+                }else{
+                    alert(`Error! Division by zero`);
+                }
+            }
+        }
+    </script>
 </body>
 </html>
