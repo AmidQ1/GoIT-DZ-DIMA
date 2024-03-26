@@ -117,23 +117,27 @@
 
         // 6
         let selectionOfOperations = prompt("+ - * /")
-        let nomberOne =  Number(prompt("Enter first number"));
-        let nomberTwo = Number(prompt("Enter second number"));
+        let numberOne =  Number(prompt("Enter first number"));
+        let numberTwo = Number(prompt("Enter second number"));
         switch(selectionOfOperations){
             case "+": {
-                alert(`${nomberOne} + ${nomberTwo} = ${nomberOne + nomberTwo}`);
+                alert(`${numberOne} + ${numberTwo} = ${numberOne + numberTwo}`);
                 break;
             }
             case "-": {
-                alert(`${nomberOne} - ${nomberTwo} = ${nomberOne - nomberTwo}`);
+                alert(`${numberOne} - ${numberTwo} = ${numberOne - numberTwo}`);
                 break;
             }
             case "*": {
-                alert(`${nomberOne} * ${nomberTwo} = ${nomberOne * nomberTwo}`);
+                alert(`${numberOne} * ${numberTwo} = ${numberOne * numberTwo}`);
                 break;
-            }
+            }  
             case "/": {
-                alert(`${nomberOne} / ${nomberTwo} = ${nomberOne / nomberTwo}`);
+                if(numberTwo !== 0) {
+                    alert(`${numberOne} / ${numberTwo} = ${numberOne / numberTwo}`);
+                }else{
+                    alert(`Error! Division by zero`);
+                }
             }
         }
     </script>
