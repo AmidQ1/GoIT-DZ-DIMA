@@ -7,6 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My DZ</h1>
+    <script>
+
+        let a = Number(prompt("Enter the value of A:"));
+        let b = Number(prompt("Enter the value of B:"));
+        // 1
+        if (a && b) {
+            alert("Обидва поля заповнені");
+        } else {
+            alert("Не всі поля заповнені");
+        };
+        // 2
+        if (a + b <= 10) {
+            alert("Сума менша або дорівнює");
+        } else {
+            alert("Сума більша за 10");
+        }
+        // 3
+        let c = prompt("Enter the value of C:");
+        if(c.includes("JavaScript")){
+            alert("Текст містить слово JavaScript");
+        } else {
+            alert("Текст не містить слово JavaScript");
+        }
+        //  4
+        let s = Number(prompt( "Enter the number : "));
+        if(s >= 10 && s <= 20){
+            alert("Число входить в діапазон від 10 до 20")
+        }else{
+            alert("Число не входить в діапазон від 10 до 20")
+        }
+        // 5
+        let name = prompt("What is your name?");
+        let email = prompt("What is your e-mail?");
+        let password = prompt("What is your password?");
+
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (name.length < 3) {
+            alert("Ім'я має містити не менше 3 символів");
+        }
+
+        if (!emailPattern.test(email)) {
+            alert("Введіть коректний email");
+        }
+    
+        if (password.length < 6) {
+            alert("Пароль має містити не менше 6 символів");
+        }
+
+    </script>
 </body>
 </html>
