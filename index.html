@@ -211,8 +211,30 @@
 //     console.log(total += cart[i]);
 // }
 
-let arr = [1,2,3,4,5,6,7,8,9,10]; 
-console.log(arr.slice(0,5));
+// let arr = [1,2,3,4,5,6,7,8,9,10]; 
+// for(let number of arr){
+//     console.log(number);
+//     if (number == 7){
+//         break;
+//     }
+// }
+
+const array1 = [5, 10, 15, 20];
+const array2 = [10, 20, 30];
+let total1 = 0;
+let total2 = 0;
+for(let num1 of array1) {
+    total1+=num1;
+}
+
+console.log(total1)
+for(let num2 of array2) {
+    total2+=num2;
+}
+console.log(total2)
+
+let total = total1+total2;
+console.log(total)
 
 
 </script>
