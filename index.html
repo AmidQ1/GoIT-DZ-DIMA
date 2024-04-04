@@ -219,23 +219,32 @@
 //     }
 // }
 
-const array1 = [5, 10, 15, 20];
-const array2 = [10, 20, 30];
-let total1 = 0;
-let total2 = 0;
-for(let num1 of array1) {
-    total1+=num1;
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total1 = 0;
+// let total2 = 0;
+// for(let num1 of array1) {
+//     total1+=num1;
+// }
+
+// console.log(total1)
+// for(let num2 of array2) {
+//     total2+=num2;
+// }
+// console.log(total2)
+
+// let total = total1+total2;
+// console.log(total)
+
+
+let arr=[12, 34, -45, 56, 890];
+let minValue = arr[0];
+for(let i = 0; i<arr.length; i++) {
+    if(arr[i]<minValue) {
+        minValue=arr[i]
+    }
 }
-
-console.log(total1)
-for(let num2 of array2) {
-    total2+=num2;
-}
-console.log(total2)
-
-let total = total1+total2;
-console.log(total)
-
+console.log(minValue)
 
 </script>
 </body>
