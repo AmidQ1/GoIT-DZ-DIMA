@@ -40,8 +40,8 @@
                 console.log(cards);
             // task 4
             const cardToInsert = "card-6";
-            cards.push(cardToInsert);
-                console.log(cards);
+            cards.splice(cards.length, 0, cardToInsert);
+            console.log(cards);
             // task 5
             const cardToUpdate = "card-4.2";
             cards.splice(2,1, cardToUpdate);
