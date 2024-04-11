@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My DZ</h1>
+    <script>
+        // task 1
+        console.log("Task 1");
+            function logItems(array){
+                for(let i = 0; i < array.length; i++){
+                    console.log(`${i + 1} - ${array[i]}`);
+                }
+            }
+            const fruits = ['Mango', 'Poly', 'Ajax'];
+            logItems(fruits)
+        
+        // task 2
+        console.log("Task 2"); 
+            let message = prompt('Message:');
+            const pricePerWord = 10;
+            function calculateEngravingPrice(message, pricePerWord){
+                const proble = message.split(' ');
+                const totalPrice = proble.length * pricePerWord;
+                return totalPrice;
+            }
+            
+            const totalCost = calculateEngravingPrice(message, pricePerWord);
+            console.log(totalCost);
+        // task 3
+        console.log("Task 3");
+            function findLongestWord(string){
+                
+            }
+    </script>
 </body>
 </html>
