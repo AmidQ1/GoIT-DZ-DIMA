@@ -247,14 +247,26 @@
 // console.log(minValue)
 
 
-function hello2(name){
+// function hello2(name){
 
-    console.log(`Hello ${name}!`);
-}
-const nameHello = "Василь";
-    hello2(prompt()); //
-    hello2(nameHello);
-    hello2("World");
+//     console.log(`Hello ${name}!`);
+// }
+// const nameHello = "Василь";
+//     hello2(prompt()); //
+//     hello2(nameHello);
+//     hello2("World");
+
+const addMethod3 = (a, b) => {
+    if (b === 0) {
+        console.log("Помилка: Ділення на нуль!");
+        return undefined; 
+    }
+    return a / b;
+};
+
+const result = addMethod3(1, 0);
+console.log(result);
+
 
 
 
