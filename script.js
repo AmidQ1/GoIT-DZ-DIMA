@@ -43,8 +43,9 @@ console.log(result);
 // task 5
 
 const calcDiscountPrice = (price, discount, callback) => {
-
+    const discountedPrice = price - (price * discount / 100); 
+    callback(discountedPrice);
 }
 
-const showDiscountPrice = ;
+const showDiscountPrice = (discountedPrice) => console.log(`Discounted price: ${discountedPrice}`); ;
 calcDiscountPrice(100,10,showDiscountPrice);
