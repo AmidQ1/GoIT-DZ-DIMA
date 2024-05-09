@@ -8,11 +8,14 @@ message()
 // task 2
 const randomMessage = prompt("число від 1 до 100");
 const randomNumber = Math.floor(Math.random() * 100) + 1;
-if (randomMessage == randomNumber) {
-    alert("You win!");
-} else {
-    alert("You lose!");
+const randomFunction = () => {
+    if (randomMessage == randomNumber) {
+        alert("You win!");
+    } else {
+        alert("You lose!");
+    }
 }
+randomFunction();
 console.log("Your: ", randomMessage, "Random: ", randomNumber);
 
 // task 3
