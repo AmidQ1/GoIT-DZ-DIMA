@@ -357,13 +357,56 @@
 // console.log(c)
 // console.log(z)
 
-let a = 10;
-let b = a;
-console.log(a)
-console.log(b)
-a = 15;
-console.log(a)
-console.log(b)
+// let a = 10;
+// let b = a;
+// console.log(a)
+// console.log(b)
+// a = 15;
+// console.log(a)
+// console.log(b)
+
+
+
+
+
+// const user = {
+// name: 'John',
+// age: 30,
+// email: 'john@example.com'
+// }
+
+// let {name, age, email} = user;
+// console.log(name)
+// console.log(age)
+// console.log(email)
+
+
+// make, year, features
+
+const car = {
+    make: 'Toyota', 
+    model: 'Camry',
+    year: 2020,
+    features: ['power windows', 'rear camera', 'navigation'],
+    safety: {
+        airbags: true,
+        antilock_brakes: true,
+        stability_control: true
+    }
+}
+
+const {make, year: productionYear, features: [,item2]} = car;
+console.log(make);
+console.log(productionYear);
+console.log(item2);
+
+
+// let newarr = ['power windows', 'rear camera', 'navigation'];
+
+// const [item1, item2, item3] = newarr;
+
+
+
 
 
 
