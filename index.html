@@ -383,27 +383,65 @@
 
 // make, year, features
 
-const car = {
-    make: 'Toyota', 
-    model: 'Camry',
-    year: 2020,
-    features: ['power windows', 'rear camera', 'navigation'],
-    safety: {
-        airbags: true,
-        antilock_brakes: true,
-        stability_control: true
-    }
-}
+// const car = {
+//     make: 'Toyota', 
+//     model: 'Camry',
+//     year: 2020,
+//     features: ['power windows', 'rear camera', 'navigation'],
+//     safety: {
+//         airbags: true,
+//         antilock_brakes: true,
+//         stability_control: true
+//     }
+// }
 
-const {make, year: productionYear, features: [,item2]} = car;
-console.log(make);
-console.log(productionYear);
-console.log(item2);
+// const {make, year: productionYear, features: [,item2]} = car;
+// console.log(make);
+// console.log(productionYear);
+// console.log(item2);
 
 
 // let newarr = ['power windows', 'rear camera', 'navigation'];
 
 // const [item1, item2, item3] = newarr;
+
+
+
+
+
+
+
+
+const players = [
+    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+];
+
+const names = players.map(names => names.name);
+console.log(names);
+
+const point = players.map(point => point.points*1.1);
+console.log(point);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
