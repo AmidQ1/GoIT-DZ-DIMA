@@ -55,8 +55,22 @@ console.log(
     })
 );
 // task 5
-const getAllPropValues = (arr, prop) => arr.map(obj => obj[prop]).filter(value => value !== undefined);
-console.log(getAllPropValues([{ name: 'F', age: 30 }, { name: 'A', age: 25 }], 'age')); 
+function getAllPropValues(arr, prop) {
+    const values = [];
+    for (const obj of arr) {
+      if (prop in obj) {
+        values.push(obj[prop]);
+      }
+    }
+    return values;
+}
+const objects = [
+    { name: 'А', age: 30 },
+    { name: 'B', age: 25 },
+    { name: 'C', age: 35 }
+];
+
+console.log(getAllPropValues(objects, 'age'));
 
 // task 6
 const calculateTotalPrice = (allProdcuts, productName) =>{
