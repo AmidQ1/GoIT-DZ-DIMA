@@ -420,11 +420,40 @@ const players = [
     { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
 ];
 
-const names = players.map(names => names.name);
-console.log(names);
 
-const point = players.map(point => point.points*1.1);
-console.log(point);
+// const only = players.filter(only => only.online == false);
+// console.log(only);
+
+// const timePlayer = players.filter(time => time.timePlayed>250);
+// console.log(timePlayer);
+// const player = 'player-2';
+
+// const idPlayer = players.find(idPlayer => idPlayer.id == player)
+// console.log(idPlayer);
+
+const onlinePlayer = players.every(({online}) => online);
+console.log(onlinePlayer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const names = players.map(names => names.name);
+// console.log(names);
+
+// const point = players.map(point => point.points*1.1);
+// console.log(point);
+
+
+
 
 
 
