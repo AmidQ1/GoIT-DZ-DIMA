@@ -56,14 +56,9 @@ console.log(
 );
 // task 5
 function getAllPropValues(arr, prop) {
-    const values = [];
-    for (const obj of arr) {
-      if (prop in obj) {
-        values.push(obj[prop]);
-      }
-    }
-    return values;
+    return arr.map(item => item[prop]);
 }
+
 const objects = [
     { name: 'А', age: 30 },
     { name: 'B', age: 25 },
