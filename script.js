@@ -30,3 +30,34 @@ const getUsersWithGender = (users, gender) => {
 };
   
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+// task 4
+const getInactiveUsers = users => {
+    return users.filter(user => !user.isActive);
+};
+  
+console.log(getInactiveUsers(users));
+// [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
+
+// task 5
+const getUserWithEmail = (users, email) => {
+    return users.find(user => user.email === email);
+};
+  
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com'));
+// {об'єкт користувача Sheree Anthony}
+  
+console.log(getUserWithEmail(users, 'elmahead@omatom.com'));
+// {об'єкт користувача Elma Head}
+
+// task 6
+const getUsersWithAge = (users, min, max) => {
+    return users.filter(user => user.age >= min && user.age <= max);
+};
+  
+console.log(getUsersWithAge(users, 20, 30));
+// [об'єкт Ross Vazquez, об'єкт Elma Head, об'єкт Carey Barr]
+  
+console.log(getUsersWithAge(users, 30, 40));
+// [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Blackburn Dotson, об'єкт Sheree Anthony]
+  
