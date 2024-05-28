@@ -1,8 +1,9 @@
 // task 1
 const user = {
-    name: 'Dima',
-    hobby: 'gaming',
-    premium: true 
+    name: 'Mango',
+    age: 20,
+    hobby: 'html',
+    premium: true,
 }
 
 // user.mood = "happy";
@@ -75,6 +76,11 @@ const objects = [
     { name: 'B', age: 25 },
     { name: 'C', age: 35 }
 ];
+const [first, second, third] = objects;
+
+console.log(first); 
+console.log(second); 
+console.log(third);
 
 console.log(getAllPropValues(objects, 'age'));
 
@@ -91,39 +97,61 @@ const calculateTotalPrice = (allProdcuts, productName) =>{
 console.log({name: "656", price: 2, quantity: 10})
 
 // task 7
-const account = {
-    balance: 1000,
-    transactions: [],
+const Transaction = {
+    DEPOSIT: 'deposit',
+    WITHDRAW: 'withdraw',
+  };
   
+const account = {
+    balance: 0,
+    transactions: [],
+
+    createTransaction(amount, type) {
+      return {
+        id: this.transactions.length + 1,
+        type,
+        amount
+      };
+    },
+
     deposit(amount) {
+      const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
+      this.transactions.push(transaction);
       this.balance += amount;
-      this.transactions.push({ type: 'Внесено', amount });
-      console.log(`Внесено ${amount} грн`);
     },
   
     withdraw(amount) {
-      if (this.balance >= amount) {
-        this.balance -= amount;
-        this.transactions.push({ type: 'Знято', amount });
-        console.log(`Знято ${amount} грн`);
-      } else {
-        console.log('Insufficient funds.');
+      if (amount > this.balance) {
+        console.log('Недостатньо коштів для зняття такої суми.');
+        return;
       }
+      const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
+      this.transactions.push(transaction);
+      this.balance -= amount;
     },
-  
+
     getBalance() {
-      console.log(`Твій баланс ${this.balance} грн`);
+      return this.balance;
     },
   
-    getTransactionHistory() {
-        console.log('Історія:');
-        for (const transaction of this.transactions) {
-            console.log(`- ${transaction.type}: ${transaction.amount} грн`);
-        }
-    }
-};
+    getTransactionDetails(id) {
+      return this.transactions.find(transaction => transaction.id === id);
+    },
+
+    getTransactionTotal(type) {
+      return this.transactions
+        .filter(transaction => transaction.type === type)
+        .reduce((total, transaction) => total + transaction.amount, 0);
+    },
+  };
   
-account.getBalance(); 
-account.deposit(500); 
-account.withdraw(200); 
-account.getTransactionHistory();
+  account.deposit(1000);
+  account.withdraw(500);
+  account.deposit(200);
+  account.withdraw(1500);
+  
+  console.log('Поточний баланс:', account.getBalance()); 
+  console.log('Деталі транзакції з ID 1:', account.getTransactionDetails(1));
+  console.log('Загальна сума депозитів:', account.getTransactionTotal(Transaction.DEPOSIT)); 
+  console.log('Загальна сума зняття:', account.getTransactionTotal(Transaction.WITHDRAW));
+  
