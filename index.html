@@ -412,27 +412,27 @@
 
 
 
-const players = [
-    { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
-    { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
-    { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
-    { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
-    { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
-];
+// const players = [
+//     { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+//     { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+//     { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+//     { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+//     { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+// ];
 
 
-// const only = players.filter(only => only.online == false);
-// console.log(only);
+// // const only = players.filter(only => only.online == false);
+// // console.log(only);
 
-// const timePlayer = players.filter(time => time.timePlayed>250);
-// console.log(timePlayer);
-// const player = 'player-2';
+// // const timePlayer = players.filter(time => time.timePlayed>250);
+// // console.log(timePlayer);
+// // const player = 'player-2';
 
-// const idPlayer = players.find(idPlayer => idPlayer.id == player)
-// console.log(idPlayer);
+// // const idPlayer = players.find(idPlayer => idPlayer.id == player)
+// // console.log(idPlayer);
 
-const onlinePlayer = players.every(({online}) => online);
-console.log(onlinePlayer);
+// const onlinePlayer = players.every(({online}) => online);
+// console.log(onlinePlayer);
 
 
 
@@ -463,6 +463,98 @@ console.log(onlinePlayer);
 
 
 
+// const animal ={
+//     legs: 4,
+// }
+
+// const dog = Object.create(animal)
+
+// dog.name = "Barsick";
+
+// console.log(dog)
+
+// console.log(animal.isPrototypeOf(dog));
+
+// console.log(dog.eyes)
+
+// console.log(dog.hasOwnProperty("legs"));
+// console.log(animal.hasOwnProperty("legs"));
+
+// console.log(Object.keys(dog))
+
+
+
+// class User{
+//     constructor(name, email){
+//         this.name = name;
+//         this.email = email;
+//     }
+// }
+
+// const user1 = new User(`user1`, `user1@gmail.com`)
+
+// console.log(user1)
+
+// const user2 = new User(`user2`, `user2@gmail.com`)
+
+// console.log(user2)
+
+// class User1{
+//     constructor(name, email){
+//         this.name = name;
+//         this.email = email;
+//     }
+
+//     getEmail(){
+//         return this.email
+//     }
+// }
+
+// const user11 = new User1({
+//     name: `user1`, 
+//     email: `user1@gmail.com`,
+// })
+
+// console.log(user11)
+
+// const user21 = new User1({
+//     name: `user21`, 
+//     email: `user21@gmail.com`,
+// })
+
+// console.log(user21)
+
+
+
+
+
+
+
+
+// class Person {
+//     constructor(name, lastname) {
+//         this.name = name;
+//         this.lastname = lastname;
+//     }
+
+//     getFullname(){
+//         return `${this.name} ${this.lastname}`;
+//     }
+// }
+
+// const user = new Person("Dima", "Luzhny")
+// console.log(user)
+
+
+class User3{name; #email;
+    constructor({name, #email}){
+        this.name = name;
+        this.#email = email;
+    }
+    getEmail(){
+        return this.#email
+    }
+}
 
 
 
