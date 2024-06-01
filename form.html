@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <title>Контакт</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Контакт</h1>
+      <form
+        action="mailto:your-email@example.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Ім'я та прізвище:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="groupa">Група:</label>
+        <select name="groupa" required >
+          <option value="uz-31">УЗ-31</option>
+          <option value="uz-32">УЗ-32</option>
+        </select>
+        <label for="performance">Навчання</label>
+        <div class="radio">
+          <input class="radio_perf" type="radio" name="performance" value="excellent">
+            <p>Відмінно</p>
+
+          <input class="radio_perf" type="radio" name="performance" value="good">
+            <p>Добре</p>
+
+          <input class="radio_perf" type="radio" name="performance" value="satisfactory">
+            <p>Негативно</p>
+        </div>
+
+        <label for="subject">Предмет:</label>
+        <div class="checkbox">
+          <input class="checkbox_sj" type="checkbox" name="subject" value="math">
+            <p>Математика</p>
+
+            <input class="checkbox_sj" type="checkbox" name="subject" value="cs">
+            <p>Комп'ютерні технології</p>
+
+            <input class="checkbox_sj" type="checkbox" name="subject" value="economics">
+            <p>Економіка</p>
+        </div>
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Відправити" />
+      </form>
+      <a class="back-link" href="index.html">Назад</a>
+    </div>
+  </body>
+</html>
