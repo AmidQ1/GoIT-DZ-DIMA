@@ -546,17 +546,102 @@
 // console.log(user)
 
 
-class User3{name; #email;
-    constructor({name, #email}){
-        this.name = name;
-        this.#email = email;
-    }
-    getEmail(){
-        return this.#email
-    }
+// class User3{name; #email;
+//     constructor({name, #email}){
+//         this.name = name;
+//         this.#email = email;
+//     }
+//     getEmail(){
+//         return this.#email
+//     }
+// }
+
+
+class User {
+  name;
+  #email;
+  #password;
+  // constructor() {
+
+  // }
+  constructor({ name, email, age, password }) {
+    this.name = name;
+    this.#email = email;
+    this.age = age;
+    this.#password = password;
+  }
+
+  getName(){
+    return this.name ;
+  }
+
+
+
+
+// 1
+
+  getPassword(){
+    return this.#password;
+  }
+
+// 2
+  set password(password){
+    this.#password = password;
+  }
+  get password(){
+    return this.#password;
+  }
+
+
+
+
+
+
+  // getEmail() {
+  //   return this.#email;
+  // }
+
+  // get email() {
+  //   return this.#email;
+  // }
+
+  // set email(email) {
+  //   this.#email = email;
+  // }
+
+  // setEmail(email) {
+  //   this.#email = email;
+  // }
 }
 
+const user3 = new User({ name: "Ivan", email: "ivan@mail.com", age: 25, password: 123456789});
+// console.log(user3.getEmail());
+// console.log(user3.email);
+// user3.email = "newEmail@mail.com";
+// user3.setEmail("newemail");
+// console.log(user3.email);
 
+console.log(user3.getPassword());
+
+console.log(user3.password);
+
+
+
+// const user1 = {
+//   name: "Ivan",
+//   displayName: function () {
+//     console.log("name", name);
+//   },
+// };
+
+
+
+// const user2 = {
+//   name: "Julia",
+//   displayName: function () {
+//     console.log("name", name);
+//   },
+// };
 
 
 
