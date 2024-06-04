@@ -1,11 +1,11 @@
 // task 1
-function Account({login, email}){
+class Account{
     this.login = login;
     this.email = email;
 }
-Account.prototype.getInfo = function(){
+
     console.log(`Login: ${this.login}, Email: ${this.email}`); // function
-}
+
 const mango = new Account({
   login: 'Mangozedog',
   email: 'mango@dog.woof',
