@@ -107,16 +107,17 @@ const account = {
     transactions: [],
 
     createTransaction(amount, type) {
-      return {
+      const transaction = {
         id: this.transactions.length + 1,
         type,
         amount
       };
+      this.transactions.push(transaction);
+      return transaction;
     },
 
     deposit(amount) {
-      const transaction = this.createTransaction(amount, Transaction.DEPOSIT);
-      this.transactions.push(transaction);
+      this.createTransaction(amount, Transaction.DEPOSIT);
       this.balance += amount;
     },
   
@@ -125,8 +126,7 @@ const account = {
         console.log('Недостатньо коштів для зняття такої суми.');
         return;
       }
-      const transaction = this.createTransaction(amount, Transaction.WITHDRAW);
-      this.transactions.push(transaction);
+      this.createTransaction(amount, Transaction.WITHDRAW);
       this.balance -= amount;
     },
 
@@ -139,9 +139,9 @@ const account = {
     },
 
     getTransactionTotal(type) {
-      return this.transactions
-        .filter(transaction => transaction.type === type)
-        .reduce((total, transaction) => total + transaction.amount, 0);
+      return this.transactions.reduce((total, transaction) => {
+        return transaction.type === type ? total + transaction.amount : total;
+      }, 0);
     },
   };
   
