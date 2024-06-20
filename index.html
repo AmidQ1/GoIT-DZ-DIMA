@@ -724,32 +724,30 @@
 
 
 
-// Нехай є базовий клас Animal з методом makeSound(). Створіть підклас Cat, який буде наслідувати Animal та перевизначати метод makeSound().
+// // Нехай є базовий клас Animal з методом makeSound(). Створіть підклас Cat, який буде наслідувати Animal та перевизначати метод makeSound().
 
-class Animal{
-    makeSound(){
-        const sound = "The animal makes a sound";
-        console.log(sound)
-        return sound;
-    }
-}
+// class Animal{
+//     makeSound(){
+//         const sound = "The animal makes a sound";
+//         console.log(sound)
+//         return sound;
+//     }
+// }
 
-class Cat extends Animal{
-    makeSound(){
-        const sound = "Meow";
-        console.log(sound)
-        return sound;
-    }
-}
+// class Cat extends Animal{
+//     makeSound(){
+//         const sound = "Meow";
+//         console.log(sound)
+//         return sound;
+//     }
+// }
 
-const animal = new Animal();
-animal.makeSound(); // "The animal makes a sound"
-
-
-const cat = new Cat();
-cat.makeSound(); // "Meow"
+// const animal = new Animal();
+// animal.makeSound(); // "The animal makes a sound"
 
 
+// const cat = new Cat();
+// cat.makeSound(); // "Meow"
 
 
 
@@ -763,11 +761,25 @@ cat.makeSound(); // "Meow"
 
 
 
+// Створити список в html файлі. За допомогою js додати до нього пункт списку. Спочатку посилання додаємо до елементу списку, а потім цей елемент додати в DOM
+
+
+const link = document.querySelector("a");
+const addLink = document.createElement("li");
+addLink.appendChild(link);
+addLink.textContent = "New item";
 
 
 
 
 
 </script>
+
+<li class="site-nav__item">
+    <a href="" class="site-nav__link">Про нас</a>
+</li>
+
+
+
 </body>
 </html>
