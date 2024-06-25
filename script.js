@@ -4,10 +4,12 @@ class Account{login; email;
         this.login = login;
         this.email = email;
     }
-    getInfo(){
-        return `Login: ${this.login}, Email: ${this.email}`;
-    }
 }
+
+Account.prototype.getInfo = function() {
+    return `Login: ${this.login}, Email: ${this.email}`;
+};
+console.log(Account.prototype.getInfo);
 
 const mango = new Account({
   login: 'Mangozedog',
