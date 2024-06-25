@@ -28,7 +28,6 @@ console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sher
 // task 3
 const getNamesSortedByFriendsCount = users => {
     return users
-        .slice()
         .sort((a, b) => b.friends.length - a.friends.length)
         .map(user => user.name)
   };
@@ -48,7 +47,7 @@ const getSortedUniqueSkills = users => {
       });
     });
   
-    return allSkills.sort();
+    return allSkills.sort((a, b) => a.localeCompare(b));
 };
   
 console.log(getSortedUniqueSkills(users));
