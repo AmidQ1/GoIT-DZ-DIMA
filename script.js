@@ -17,4 +17,4 @@ const imgAlt = document.getElementById('image').alt = 'steam';
 // task 4
 
 const firstListItem = document.querySelector('ul li');
-const changeTextFirst = firstListItem.textContent = 'Новий текст першого елемента';
+firstListItem.textContent = 'Новий текст першого елемента';
