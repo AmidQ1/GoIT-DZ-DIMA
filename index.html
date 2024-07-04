@@ -803,23 +803,50 @@
 
 
 
-const bth10 = document.querySelector(".bth1")
-const bth20 = document.querySelector(".bth2")
-const text15 = document.querySelector(".text")
+// const bth10 = document.querySelector(".bth1")
+// const bth20 = document.querySelector(".bth2")
+// const text15 = document.querySelector(".text")
 
-bth10.addEventListener("click", () => { 
-    text15.style.fontSize = size - 30px;
-}
+// bth10.addEventListener("click", () => { 
+//     document.body.style.fontSize = getCurrentSize() - 30 + "px";
+
+// });
+
+
+
+
+
+// document.addEventListener("keydown", e => {
+//     if(e.shiftKey || e.code){
+//         alert("fjfh")
+//         document.body.style.background = "red";
+//         console.log("True")
+//     }
+// })
+
+
+
+// Змінити текст елементу з id="message" на текст, який користувач вводить у текстове поле з id="input" під час події keypress.
+
+
+const textP = document.getElementById('message');
+const textI = document.getElementById('input');
+
+document.addEventListener('keypress', (e) => {
+    textP.textContent += e.key;
+});
 
 </script>
 
+<input type="text" id="input">
+<p id="message"></p>
 
 
 
-
+<!-- 
 <p class="text" style="font-size: 40px;">black</p>
 <button class="bth2">20</button>
-<button class="bth1">10</button>
+<button class="bth1">10</button> -->
 
 
 
