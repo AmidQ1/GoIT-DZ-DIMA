@@ -826,21 +826,42 @@
 
 
 
+// document.addEventListener("mousedown", () => {
+//     document.body.style.background = "red";
+// });
+
+// document.addEventListener("mouseup", () => {
+//     document.body.style.background = "blue";
+// });
+
+
+
+
+
+
+
 // Змінити текст елементу з id="message" на текст, який користувач вводить у текстове поле з id="input" під час події keypress.
 
 
-const textP = document.getElementById('message');
-const textI = document.getElementById('input');
+const msg = document.getElementById('message');
+const input = document.getElementById('input');
 
-document.addEventListener('keypress', (e) => {
-    textP.textContent += e.code;
+input.addEventListener('keypress', (e) => {
+    msg.textContent += e.key;
 });
+
+// inputElement.addEventListener("mouseup", () => {
+//                 const userInput = inputElement.value;
+//                 messageElement.textContent = userInput;
+//             });
+
+
+
 
 </script>
 
 <input type="text" id="input">
-<p id="message"></p>
-
+<p id="message"></p> 
 
 
 <!-- 
