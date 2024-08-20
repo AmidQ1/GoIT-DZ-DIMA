@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         // // 1
         // let a1 = 5 + 3;
@@ -843,12 +844,12 @@
 // Змінити текст елементу з id="message" на текст, який користувач вводить у текстове поле з id="input" під час події keypress.
 
 
-const msg = document.getElementById('message');
-const input = document.getElementById('input');
+// const msg = document.getElementById('message');
+// const input = document.getElementById('input');
 
-input.addEventListener('keypress', (e) => {
-    msg.textContent += e.key;
-});
+// input.addEventListener('keypress', (e) => {
+//     msg.textContent += e.key;
+// });
 
 // inputElement.addEventListener("mouseup", () => {
 //                 const userInput = inputElement.value;
@@ -857,11 +858,19 @@ input.addEventListener('keypress', (e) => {
 
 
 
+const inp = document.getElementById("input");
+
+inp.addEventListener(
+    `input`, 
+    _.debounce(() => {
+        alert("Win!")
+    },500)
+)
 
 </script>
 
 <input type="text" id="input">
-<p id="message"></p> 
+
 
 
 <!-- 
