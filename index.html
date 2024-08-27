@@ -7,6 +7,54 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My DZ</h1>
+    <h1>Task List</h1>
+    <form>
+      <label for="newTask">New task:</label>
+      <input type="text" id="newTask">
+      <button type="submit" id="addTask">Add</button>
+    </form>
+    <ul id="taskList">
+    </ul>
+    <script src="script.js"></script>
+
+    <script>
+        // const task ={
+        //     id: 1,
+        //     text: "Task 1",
+        //     completed: false,
+        // }
+
+        const tasks = [];
+        const addBth = document.getElementById("addTask")
+        const newTaskt = document.getElementById("newTask")
+        const list = document.getElementById("")
+
+        addBth.addEventList("click", (e) => {
+            e.preventDefault();
+
+            const task12={
+                id: tasks.length + 1,
+                text: newTaskt.value,
+                isComplect: false
+            };
+            tasks.push(task12);
+            console.log(tasks);
+            renderTask();
+        });
+
+        function renderTask() {
+            console.log("render");
+            const tmp = task.reduce((acc, value) => {
+                const item = `<li id="task-${value.id}">
+                <input type="checkbox" id="task-${value.id}"/>
+                <label for="task-${value.id}">${value.text}</label>
+                <button>del</button
+                `;
+                return (acc += list);
+            }, "");
+            list.innerHTML = tmp;
+        }
+    </script>
+
 </body>
 </html>
