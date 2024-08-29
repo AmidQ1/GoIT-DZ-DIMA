@@ -1,60 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Task List</h1>
     <form>
       <label for="newTask">New task:</label>
-      <input type="text" id="newTask">
+      <input type="text" id="newTask" />
       <button type="submit" id="addTask">Add</button>
     </form>
-    <ul id="taskList">
-    </ul>
-    <script src="script.js"></script>
+    <ul id="taskList"></ul>
 
     <script>
-        // const task ={
-        //     id: 1,
-        //     text: "Task 1",
-        //     completed: false,
-        // }
+      // const task ={
+      //     id: 1,
+      //     text: "Task 1",
+      //     completed: false,
+      // }
 
-        const tasks = [];
-        const addBth = document.getElementById("addTask")
-        const newTaskt = document.getElementById("newTask")
-        const list = document.getElementById("")
+      let tasks = [
+        {
+          id: "1",
+          text: "Task 1",
+          isCompleted: true,
+        },
+      ];
 
-        addBth.addEventList("click", (e) => {
-            e.preventDefault();
+      // const tasks = [];
 
-            const task12={
-                id: tasks.length + 1,
-                text: newTaskt.value,
-                isComplect: false
-            };
-            tasks.push(task12);
-            console.log(tasks);
-            renderTask();
+      // Додавання елементу
+
+      const addBtn = document.getElementById("addTask");
+      const newTaskText = document.getElementById("newTask");
+      const list = document.getElementById("taskList");
+
+      addBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const taskObj = {
+          id: !tasks.length
+            ? "0"
+            : (Number(tasks[tasks.length - 1].id) + 1).toString(),
+          text: newTaskText.value,
+          isCompleted: false,
+        };
+
+        tasks.push(taskObj);
+        console.log(tasks);
+        renderTasks();
+      });
+
+      list.addEventListener("click", (e) => {
+        // checkbox
+        console.log(e.target);
+        if (e.target.type == "checkbox") {
+          completeTask(e.target.parentNode.id);
+        }
+
+        // button
+        if (e.target.nodeName == "BUTTON") {
+          deleteTask(e.target.parentNode.id);
+        }
+      });
+
+      function deleteTask(id) {
+        tasks = tasks.filter((value) => value.id !== id);
+
+        renderTasks();
+      }
+
+      function completeTask(id) {
+        console.log("id", typeof id);
+        tasks = tasks.map((value) => {
+          console.log("is equal", value.id == id);
+          const item =
+            value.id === id
+              ? { ...value, isCompleted: !value.isCompleted }
+              : value;
+          console.log("item", item);
+          return item;
         });
 
-        function renderTask() {
-            console.log("render");
-            const tmp = task.reduce((acc, value) => {
-                const item = `<li id="task-${value.id}">
-                <input type="checkbox" id="task-${value.id}"/>
-                <label for="task-${value.id}">${value.text}</label>
-                <button>del</button
-                `;
-                return (acc += list);
-            }, "");
-            list.innerHTML = tmp;
-        }
-    </script>
+        console.log("completed tasks:", tasks);
+        renderTasks();
+      }
 
-</body>
+      function renderTasks() {
+        console.log("render");
+        const tmp = tasks.reduce((acc, value) => {
+          const item = `<li id=${value.id}>
+    <input type="checkbox" id="task-${value.id}" ${
+            value.isCompleted ? "checked" : ""
+          } />
+    <label for="task-${value.id}">${value.text}</label>
+    <button>Delete</button>
+  </li>`;
+          return (acc += item);
+        }, "");
+
+        list.innerHTML = tmp;
+      }
+
+      renderTasks();
+    </script>
+  </body>
 </html>
