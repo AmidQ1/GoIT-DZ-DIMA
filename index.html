@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <ul class="gallery">
@@ -17,80 +15,20 @@
       <li><img class="image" src="https://images.pexels.com/photos/6195166/pexels-photo-6195166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення"></li>
       <li><img class="image" src="https://images.pexels.com/photos/6957926/pexels-photo-6957926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення"></li>
       <li><img class="image" src="https://images.pexels.com/photos/15520825/pexels-photo-15520825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення"></li>
-  </ul>
+    </ul>
+    
+    <div class="full-image-container">
+      <img class="full-image" src="" alt="Повне зображення">
+    </div>    
   
 
     <div id="controls">
-      <input type="number" min="0" max="100" step="1" />
-      <button type="button" data-action="render">Створити</button>
-      <button type="button" data-action="destroy">Очистити</button>
+      <input type="number" min="0" max="100" step="1" id="amount-input" />
+      <button type="button" data-action="render" id="render-button">Створити</button>
+      <button type="button" data-action="destroy" id="destroy-button">Очистити</button>
     </div>
-
     <div id="boxes"></div>
 
-    <script src="script.js">
-      const images = document.querySelectorAll('.gallery .image');
-      let currentIndex = 0;
-
-      function showImage(index) {
-          images.forEach((img, i) => {
-              img.style.display = i === index ? 'block' : 'none';
-          });
-      }
-
-      function handleKeydown(event) {
-          if (event.key === 'ArrowRight') {
-              currentIndex = (currentIndex + 1) % images.length;
-              showImage(currentIndex);
-          } else if (event.key === 'ArrowLeft') {
-              currentIndex = (currentIndex - 1 + images.length) % images.length;
-              showImage(currentIndex);
-          }
-      }
-
-      document.addEventListener('keydown', handleKeydown);
-      showImage(currentIndex);
-
-      //
-
-      const controls = document.getElementById('controls');
-      const input = controls.querySelector('input');
-      const renderButton = controls.querySelector('[data-action="render"]');
-      const destroyButton = controls.querySelector('[data-action="destroy"]');
-      const boxesContainer = document.getElementById('boxes');
-
-      function getRandomColor() {
-          const r = Math.floor(Math.random() * 256);
-          const g = Math.floor(Math.random() * 256);
-          const b = Math.floor(Math.random() * 256);
-          return `rgb(${r}, ${g}, ${b})`;
-      }
-
-      function createBoxes(amount) {
-          let size = 30;
-          const fragment = document.createDocumentFragment();
-          for (let i = 0; i < amount; i++) {
-              const div = document.createElement('div');
-              div.style.width = `${size}px`;
-              div.style.height = `${size}px`;
-              div.style.backgroundColor = getRandomColor();
-              div.style.marginTop = "10px";
-              size += 10;
-              fragment.appendChild(div);
-          }
-          boxesContainer.appendChild(fragment);
-      }
-
-      function destroyBoxes() {
-          boxesContainer.innerHTML = '';
-      }
-
-      renderButton.addEventListener('click', () => {
-          const amount = Number(input.value);
-          createBoxes(amount);
-      });
-
-      destroyButton.addEventListener('click', destroyBoxes);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
